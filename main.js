@@ -13,21 +13,9 @@ img_y = 100;
 function add() {
 	img_image = new Image(); //defining a variable with a new image
 	img_image.onload = uploadimg; // setting a function, onloading this variable
-	img_image.src = img_image="Arrkey.png";   // load image
-
-	img_image = new Image(); //defining a variable with a new image
-	img_image.onload = uploadimg; // setting a function, onloading this variable
-	img_image.src = img_image="spkey.png";   // load image
-
-	img_image = new Image(); //defining a variable with a new image
-	img_image.onload = uploadimg; // setting a function, onloading this variable
-	img_image.src = img_image="otherkey.png";   // load image
-
-	img_image = new Image(); //defining a variable with a new image
-	img_image.onload = uploadimg; // setting a function, onloading this variable
-	img_image.src = img_image="numkey.png";   // load image
-
+	img_image.src = img_image;   // load image  
 }
+
 
 function uploadimg() {
 
@@ -42,28 +30,45 @@ function my_keydown(e)
 	keyPressed = e.keyCode;
 	console.log(keyPressed);
 	
-		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90))
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
 		//write a code to check the type of key pressed
 	
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
 		console.log("other key");
+		}
 
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
+			//write a code to check the type of key pressed
+		
 		aplhabetkey();
 		document.getElementById("d1").innerHTML="You pressed  alphabet key";
 		console.log("alphabet key");
+		}
 
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
+			//write a code to check the type of key pressed
+		
 		specialkey();
 		document.getElementById("d1").innerHTML="You pressed special key";
 		console.log("special key");
-	
-		numberkey();
-		document.getElementById("d1").innerHTML="You pressed Number key";
-		console.log("Number key");
+		}
 
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
+			//write a code to check the type of key pressed
+		
+			numberkey();
+			document.getElementById("d1").innerHTML="You pressed Number key";
+			console.log("Number key");
+		}	
+	
+		if((keyPressed >=97 && keyPressed<=122)|| (keyPressed >=65 && keyPressed<=90)){
+			//write a code to check the type of key pressed
+		
 		arrowkey();
 		document.getElementById("d1").innerHTML="You pressed Arrow key";
 		console.log("Arrow key");
+		}
 	
 }
 
