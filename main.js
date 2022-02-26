@@ -61,7 +61,7 @@ function my_keydown(e)
 		console.log("special key");
 		}
 
-		}
+		
 
 		
 	
@@ -70,12 +70,13 @@ function my_keydown(e)
 			document.getElementById("d1").innerHTML="You pressed Other key";
 			console.log("Other key");
 			}
+		}
 		
 		
 		
 
 
-function aplhabetkey()
+function alphakey()
 {
 	//upload respective image with the message. 
     img_image="Alpkey.png";
